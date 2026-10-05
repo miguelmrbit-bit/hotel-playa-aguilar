@@ -1,0 +1,68 @@
+---
+layout: base.njk
+permalink: /index.html
+lang: es
+active: inicio
+title: Hotel Playa de Aguilar **** | Muros de Nalón, Asturias
+description: Hotel de 4 estrellas junto a la playa de Aguilar, en Muros de Nalón (Asturias). Habitaciones con vistas al mar, restaurante y reserva directa.
+canonicalPath: /
+altEs: /
+altEn: /en/
+jsonld: true
+---
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('/assets/img/hero-1.jpg')"></div>
+  <div class="wrap">
+    <div class="stars">★★★★</div>
+    <div class="eyebrow" style="margin-top:10px">{{ home.hero_eyebrow_es }}</div>
+    <h1>{{ home.hero_h1_es }}</h1>
+    <hr class="goldrule">
+    <p class="lede">{{ home.hero_lede_es }}</p>
+    <form class="booking" onsubmit="return false" aria-label="Buscar disponibilidad">
+      <div class="fld"><label for="in">Entrada</label><input id="in" type="date"></div>
+      <div class="fld"><label for="out">Salida</label><input id="out" type="date"></div>
+      <div class="fld"><label for="pax">Huéspedes</label>
+        <select id="pax"><option>2 adultos</option><option>1 adulto</option><option>2 adultos · 1 niño</option><option>2 adultos · 2 niños</option><option>Familia</option></select></div>
+      <div class="go"><a class="btn" href="{{ site.bookingEs }}" target="_blank" rel="noopener">Ver disponibilidad</a></div>
+    </form>
+  </div>
+</section>
+
+<section id="hotel">
+  <div class="wrap intro-grid">
+    <div class="sec-head reveal">
+      <div class="eyebrow">El hotel</div>
+      <h2>{{ home.intro_h2_es }}</h2>
+      <p>{{ home.intro_p_es }}</p>
+      <p style="margin-top:1em"><a class="btn ghost" href="/habitaciones.html">Descubrir las habitaciones</a></p>
+    </div>
+    <div class="facts reveal">
+      {%- for f in home.facts %}
+      <div class="fact"><div class="n">{{ f.n }}</div><div class="l">{{ f.label_es }}</div></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Habitaciones</div><h2>Descansar con vistas</h2>
+      <p>Ocho estancias de estilo contemporáneo y luz natural. Elige entre el verde del jardín o el azul del mar.</p></div>
+    <div class="card-grid" style="margin-top:44px">
+      {%- for r in rooms.items %}{% if loop.index <= 3 %}
+      <article class="card reveal"><div class="ph"><img src="{{ r.image }}" alt="{{ r.name_es }}" loading="lazy"></div>
+        <div class="body"><span class="tag">{{ r.tag_es }}</span><h3>{{ r.name_es }}</h3><p class="amen">{{ r.desc_es }}</p></div></article>
+      {% endif %}{%- endfor %}
+    </div>
+    <p class="center" style="margin-top:32px"><a class="btn ghost" href="/habitaciones.html">Ver las 8 habitaciones</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="media reveal"><img src="/assets/img/restaurante.jpg" alt="Restaurante del hotel" loading="lazy"></div>
+    <div class="reveal"><div class="eyebrow">Gastronomía</div><h2 style="font-size:clamp(1.7rem,3.4vw,2.5rem); margin:.1em 0 .4em">Sabor de Asturias frente al mar</h2>
+      <p class="muted">Desayuno buffet, cocina de producto local y una cafetería con terraza para ver caer la tarde sobre el Cantábrico. Pescado del día, fabada y sidra de la tierra.</p>
+      <p style="margin-top:1em"><a class="btn ghost" href="/restaurante.html">Ver el restaurante y las cartas</a></p></div>
+  </div>
+</section>

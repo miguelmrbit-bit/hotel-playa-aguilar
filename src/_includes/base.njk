@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ site.baseUrl }}{{ canonicalPath }}">
+{%- if altEs %}
+<link rel="alternate" hreflang="es" href="{{ site.baseUrl }}{{ altEs }}">
+<link rel="alternate" hreflang="en" href="{{ site.baseUrl }}{{ altEn }}">
+<link rel="alternate" hreflang="x-default" href="{{ site.baseUrl }}{{ altEs }}">
+{%- endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hotel Playa de Aguilar">
+<meta property="og:locale" content="{{ 'es_ES' if lang == 'es' else 'en_US' }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ site.baseUrl }}{{ canonicalPath }}">
+<meta property="og:image" content="{{ site.baseUrl }}/assets/img/hero-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1C4A43">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/css/style.css">
+{%- if jsonld %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Hotel","name":"{{ site.name }}","starRating":{"@type":"Rating","ratingValue":"4"},"address":{"@type":"PostalAddress","streetAddress":"{{ site.addressStreet }}","postalCode":"{{ site.addressPostal }}","addressLocality":"{{ site.addressLocality }}","addressRegion":"{{ site.addressRegion }}","addressCountry":"ES"},"telephone":"{{ site.phoneTel }}","email":"{{ site.email }}","url":"{{ site.baseUrl }}/","image":"{{ site.baseUrl }}/assets/img/hero-1.jpg","priceRange":"€€"}
+</script>
+{%- endif %}
+</head>
+<body>
+<a class="skip" href="#contenido">{{ 'Saltar al contenido' if lang == 'es' else 'Skip to content' }}</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="{{ '/index.html' if lang == 'es' else '/en/index.html' }}">Playa de Aguilar <small>★★★★</small></a>
+    <button class="menu-btn" aria-label="{{ 'Menú' if lang == 'es' else 'Menu' }}" aria-expanded="false">☰</button>
+    <nav class="main" id="nav">
+    {%- if lang == 'es' %}
+      <a href="/index.html"{% if active == 'inicio' %} class="active"{% endif %}>Inicio</a>
+      <a href="/habitaciones.html"{% if active == 'habitaciones' %} class="active"{% endif %}>Habitaciones</a>
+      <a href="/servicios.html"{% if active == 'servicios' %} class="active"{% endif %}>Servicios</a>
+      <a href="/restaurante.html"{% if active == 'restaurante' %} class="active"{% endif %}>Restaurante</a>
+      <a href="/entorno.html"{% if active == 'entorno' %} class="active"{% endif %}>Entorno</a>
+      <a href="/contacto.html"{% if active == 'contacto' %} class="active"{% endif %}>Contacto</a>
+    {%- else %}
+      <a href="/en/index.html"{% if active == 'inicio' %} class="active"{% endif %}>Home</a>
+      <a href="/en/rooms.html"{% if active == 'habitaciones' %} class="active"{% endif %}>Rooms</a>
+      <a href="/en/services.html"{% if active == 'servicios' %} class="active"{% endif %}>Services</a>
+      <a href="/en/restaurant.html"{% if active == 'restaurante' %} class="active"{% endif %}>Restaurant</a>
+      <a href="/en/surroundings.html"{% if active == 'entorno' %} class="active"{% endif %}>Surroundings</a>
+      <a href="/en/contact.html"{% if active == 'contacto' %} class="active"{% endif %}>Contact</a>
+    {%- endif %}
+    </nav>
+    <div class="bar-right">
+      <span class="lang">
+        {%- if lang == 'es' %}<span class="on" aria-current="page">ES</span><a href="{{ altEn if altEn else '/en/index.html' }}">EN</a>
+        {%- else %}<a href="{{ altEs if altEs else '/index.html' }}">ES</a><span class="on" aria-current="page">EN</span>{%- endif %}
+      </span>
+      <a class="btn" href="{{ site.bookingEs if lang == 'es' else site.bookingEn }}" target="_blank" rel="noopener">{{ 'Reservar' if lang == 'es' else 'Book' }}</a>
+    </div>
+  </div>
+</header>
+<main id="contenido">
+{{ content | safe }}
+</main>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div>
+      <span class="badge">{{ 'Reserva directa' if lang == 'es' else 'Direct booking' }}</span>
+      <h2>{{ 'El mejor precio, siempre en nuestra web' if lang == 'es' else 'The best rate, always on our website' }}</h2>
+      <p>{{ 'Reserva sin intermediarios a través de nuestro motor seguro. Cancelación flexible y atención directa del hotel.' if lang == 'es' else 'Book with no middlemen through our secure engine. Flexible cancellation and direct assistance from the hotel.' }}</p>
+    </div>
+    <a class="btn gold" href="{{ site.bookingEs if lang == 'es' else site.bookingEn }}" target="_blank" rel="noopener">{{ 'Comprobar disponibilidad' if lang == 'es' else 'Check availability' }}</a>
+  </div>
+</section>
+<footer>
+  <div class="wrap" style="padding-block:clamp(48px,7vw,80px)">
+    <div class="foot-grid">
+      <div class="reveal">
+        <div class="foot-brand">Playa de Aguilar <small>★★★★</small></div>
+        <p class="muted" style="max-width:34ch; margin-top:12px">{{ 'Hotel de cuatro estrellas rodeado de bosque y mar. Muros de Nalón, Principado de Asturias.' if lang == 'es' else 'A four-star hotel surrounded by forest and sea. Muros de Nalón, Asturias, Spain.' }}</p>
+      </div>
+      <div class="reveal">
+        <h4>{{ 'Contacto' if lang == 'es' else 'Contact' }}</h4>
+        <p style="margin:0; line-height:2">
+          <a href="tel:{{ site.phoneTel }}">{{ site.phoneDisplay }}</a><br>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+          {{ site.addressStreet }}, {{ site.addressPostal }}<br>{{ site.addressLocality }}, {{ site.addressRegion }}
+        </p>
+      </div>
+      <div class="reveal">
+        <h4>{{ 'Explora' if lang == 'es' else 'Explore' }}</h4>
+        {%- if lang == 'es' %}
+        <p style="margin:0; line-height:2">
+          <a href="/habitaciones.html">Habitaciones</a><br>
+          <a href="/servicios.html">Servicios</a><br>
+          <a href="/restaurante.html">Restaurante y cartas</a><br>
+          <a href="/entorno.html">Entorno</a><br>
+          <a href="/contacto.html">Contacto</a>
+        </p>
+        {%- else %}
+        <p style="margin:0; line-height:2">
+          <a href="/en/rooms.html">Rooms</a><br>
+          <a href="/en/services.html">Services</a><br>
+          <a href="/en/restaurant.html">Restaurant & menus</a><br>
+          <a href="/en/surroundings.html">Surroundings</a><br>
+          <a href="/en/contact.html">Contact</a>
+        </p>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+  <div class="kitdigital"><div class="wrap"><img src="/assets/img/kit-digital-logos.png" alt="Programa Kit Digital. Financiado por la Unión Europea - NextGenerationEU. Plan de Recuperación, Transformación y Resiliencia. Gobierno de España. Red.es." loading="lazy"></div></div>
+  <div class="legal-bar">
+    <div class="wrap">
+      <span>© {{ anyo }} Hotel Playa de Aguilar</span>
+      <span>
+        <a href="/aviso-legal.html">{{ 'Aviso legal' if lang == 'es' else 'Legal notice' }}</a> ·
+        <a href="/privacidad.html">{{ 'Privacidad' if lang == 'es' else 'Privacy' }}</a> ·
+        <a href="/cookies.html">Cookies</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/site.js"></script>
+<!-- Netlify Identity: gestiona la invitación/acceso al panel /admin/ -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () { document.location.href = "/admin/"; });
+      }
+    });
+  }
+</script>
+</body>
+</html>

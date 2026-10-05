@@ -1,0 +1,14 @@
+{
+  "name": "hotel-playa-aguilar",
+  "version": "1.0.0",
+  "description": "Web del Hotel Playa de Aguilar (Eleventy + Decap CMS)",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "cms": "npx decap-server"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

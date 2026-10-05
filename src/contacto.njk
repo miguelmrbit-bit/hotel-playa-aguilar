@@ -1,0 +1,31 @@
+---
+layout: base.njk
+permalink: /contacto.html
+lang: es
+active: contacto
+title: Contacto | Hotel Playa de Aguilar ****
+description: Teléfono, email, WhatsApp y ubicación del Hotel Playa de Aguilar en Muros de Nalón, Asturias.
+canonicalPath: /contacto.html
+altEs: /contacto.html
+altEn: /en/contact.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/hero-2.jpg')"></div>
+  <div class="wrap"><div class="eyebrow">Contacto</div><h1>Hablemos</h1></div>
+</section>
+<section>
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="sec-head"><h2>Estamos a tu disposición</h2><p>Resolvemos cualquier duda sobre tu reserva, el restaurante o el entorno.</p></div>
+      <div class="contact-list" style="margin-top:28px">
+        <div class="contact-item"><span class="ico">☎</span><div><h4>Teléfono</h4><a href="tel:{{ site.phoneTel }}">{{ site.phoneDisplay }}</a></div></div>
+        <div class="contact-item"><span class="ico">✉</span><div><h4>Email</h4><a href="mailto:{{ site.email }}">{{ site.email }}</a></div></div>
+        <div class="contact-item"><span class="ico">💬</span><div><h4>WhatsApp</h4><a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div></div>
+        <div class="contact-item"><span class="ico">⚑</span><div><h4>Dirección</h4><p>{{ site.addressStreet }}, {{ site.addressPostal }}<br>{{ site.addressLocality }}, {{ site.addressRegion }}, España</p></div></div>
+        <div class="contact-item"><span class="ico">⏰</span><div><h4>Recepción</h4><p>{{ site.hoursEs }}</p></div></div>
+      </div>
+      <p style="margin-top:28px"><a class="btn" href="{{ site.bookingEs }}" target="_blank" rel="noopener">Reservar online</a></p>
+    </div>
+    <div class="map reveal"><iframe title="Mapa Hotel Playa de Aguilar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Hotel+Playa+de+Aguilar+Muros+de+Nal%C3%B3n+Asturias&output=embed"></iframe></div>
+  </div>
+</section>

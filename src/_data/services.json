@@ -1,0 +1,20 @@
+{
+  "items": [
+    { "title_es": "Restaurante", "desc_es": "Cocina asturiana de producto local con pescado del día y platos de temporada.",
+      "title_en": "Restaurant", "desc_en": "Asturian cuisine made with local produce, fish of the day and seasonal dishes." },
+    { "title_es": "Desayuno buffet", "desc_es": "Batería completa dulce y salada para empezar el día con energía.",
+      "title_en": "Buffet breakfast", "desc_en": "A full sweet and savoury spread to start the day with energy." },
+    { "title_es": "Cafetería con terraza", "desc_es": "Un espacio al aire libre para una sidra o un café frente al Cantábrico.",
+      "title_en": "Café with terrace", "desc_en": "An outdoor space for a cider or a coffee facing the Cantabrian Sea." },
+    { "title_es": "Wifi gratuito", "desc_es": "Conexión de alta velocidad en todo el hotel, habitaciones incluidas.",
+      "title_en": "Free Wi-Fi", "desc_en": "High-speed connection throughout the hotel, rooms included." },
+    { "title_es": "Aparcamiento", "desc_es": "Parking para clientes junto al hotel, sin complicaciones.",
+      "title_en": "Parking", "desc_en": "Guest parking next to the hotel, hassle-free." },
+    { "title_es": "Jardín y pinar", "desc_es": "Zonas verdes y acceso directo al entorno natural y a la playa de Aguilar.",
+      "title_en": "Garden & pine woods", "desc_en": "Green areas and direct access to nature and Aguilar beach." },
+    { "title_es": "Recepción y atención", "desc_es": "Información de rutas, reservas de restaurante y todo lo que necesites.",
+      "title_en": "Reception & assistance", "desc_en": "Route tips, restaurant bookings and anything you need." },
+    { "title_es": "Eventos y celebraciones", "desc_es": "Espacios para pequeñas celebraciones y escapadas en grupo.",
+      "title_en": "Events", "desc_en": "Spaces for small celebrations and group getaways." }
+  ]
+}

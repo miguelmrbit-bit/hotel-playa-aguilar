@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "image": "/assets/img/room-suite-mar.webp",
+      "tag_es": "Lo más selecto", "name_es": "Suite Deluxe con vistas al mar",
+      "desc_es": "Salón independiente, terraza y baño en mármol · hasta 2 personas",
+      "tag_en": "Most exclusive", "name_en": "Deluxe Suite with sea view",
+      "desc_en": "Separate living area, terrace and marble bathroom · up to 2 guests"
+    },
+    {
+      "image": "/assets/img/room-doble-mar.webp",
+      "tag_es": "Vistas al mar", "name_es": "Doble Deluxe con vistas al mar",
+      "desc_es": "Cama king y balcón al Cantábrico · 2 personas",
+      "tag_en": "Sea view", "name_en": "Deluxe Double with sea view",
+      "desc_en": "King bed and balcony over the sea · 2 guests"
+    },
+    {
+      "image": "/assets/img/room-doble-jardin.webp",
+      "tag_es": "Vistas al jardín", "name_es": "Doble Deluxe con vistas al jardín",
+      "desc_es": "Serena y luminosa, junto al pinar · 2 personas",
+      "tag_en": "Garden view", "name_en": "Deluxe Double with garden view",
+      "desc_en": "Serene and bright, next to the pines · 2 guests"
+    },
+    {
+      "image": "/assets/img/room-doble-terraza.webp",
+      "tag_es": "Con terraza", "name_es": "Doble Deluxe con terraza",
+      "desc_es": "Terraza privada al aire libre · 2 personas",
+      "tag_en": "With terrace", "name_en": "Deluxe Double with terrace",
+      "desc_en": "Private outdoor terrace · 2 guests"
+    },
+    {
+      "image": "/assets/img/room-jacuzzi.jpg",
+      "tag_es": "La más romántica", "name_es": "Doble Deluxe con jacuzzi",
+      "desc_es": "Jacuzzi privado en la habitación · 2 personas",
+      "tag_en": "Most romantic", "name_en": "Deluxe Double with jacuzzi",
+      "desc_en": "Private in-room jacuzzi · 2 guests"
+    },
+    {
+      "image": "/assets/img/room-doble-superior.webp",
+      "tag_es": "Confort", "name_es": "Doble Superior",
+      "desc_es": "Opción de 1 o 2 camas · práctica y acogedora · 2 personas",
+      "tag_en": "Comfort", "name_en": "Superior Double",
+      "desc_en": "1 or 2 beds · practical and cosy · 2 guests"
+    },
+    {
+      "image": "/assets/img/room-superior-terraza.webp",
+      "tag_es": "Con terraza", "name_es": "Doble Superior con terraza",
+      "desc_es": "1 o 2 camas y terraza privada · 2 personas",
+      "tag_en": "With terrace", "name_en": "Superior Double with terrace",
+      "desc_en": "1 or 2 beds and a private terrace · 2 guests"
+    },
+    {
+      "image": "/assets/img/room-familiar.webp",
+      "tag_es": "Para la familia", "name_es": "Familiar con terraza",
+      "desc_es": "Espacio para 3-4 personas y terraza · ideal en familia",
+      "tag_en": "For the family", "name_en": "Family room with terrace",
+      "desc_en": "Room for 3-4 guests and a terrace · ideal for families"
+    }
+  ]
+}

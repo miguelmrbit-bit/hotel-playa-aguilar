@@ -1,0 +1,31 @@
+---
+layout: base.njk
+permalink: /en/contact.html
+lang: en
+active: contacto
+title: Contact | Hotel Playa de Aguilar ****
+description: Phone, email, WhatsApp and location of Hotel Playa de Aguilar in Muros de Nalón, Asturias.
+canonicalPath: /en/contact.html
+altEs: /contacto.html
+altEn: /en/contact.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/hero-2.jpg')"></div>
+  <div class="wrap"><div class="eyebrow">Contact</div><h1>Let's talk</h1></div>
+</section>
+<section>
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="sec-head"><h2>We're here to help</h2><p>We'll answer any question about your booking, the restaurant or the surroundings.</p></div>
+      <div class="contact-list" style="margin-top:28px">
+        <div class="contact-item"><span class="ico">☎</span><div><h4>Phone</h4><a href="tel:{{ site.phoneTel }}">+34 {{ site.phoneDisplay }}</a></div></div>
+        <div class="contact-item"><span class="ico">✉</span><div><h4>Email</h4><a href="mailto:{{ site.email }}">{{ site.email }}</a></div></div>
+        <div class="contact-item"><span class="ico">💬</span><div><h4>WhatsApp</h4><a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">Message us on WhatsApp</a></div></div>
+        <div class="contact-item"><span class="ico">⚑</span><div><h4>Address</h4><p>{{ site.addressStreet }}, {{ site.addressPostal }}<br>{{ site.addressLocality }}, {{ site.addressRegion }}, Spain</p></div></div>
+        <div class="contact-item"><span class="ico">⏰</span><div><h4>Reception</h4><p>{{ site.hoursEn }}</p></div></div>
+      </div>
+      <p style="margin-top:28px"><a class="btn" href="{{ site.bookingEn }}" target="_blank" rel="noopener">Book online</a></p>
+    </div>
+    <div class="map reveal"><iframe title="Map Hotel Playa de Aguilar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Hotel+Playa+de+Aguilar+Muros+de+Nal%C3%B3n+Asturias&output=embed"></iframe></div>
+  </div>
+</section>

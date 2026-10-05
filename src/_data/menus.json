@@ -1,0 +1,42 @@
+{
+  "breakfast_intro_es": "Desayuno buffet con producto local, repostería casera y opciones saludables. (Contenido de ejemplo: edítalo desde el panel para poner tu carta real.)",
+  "breakfast_intro_en": "Buffet breakfast with local produce, homemade pastries and healthy options. (Sample content: edit it from the panel to add your real menu.)",
+  "breakfast_sections": [
+    {
+      "title_es": "Panadería y repostería", "title_en": "Bakery & pastries",
+      "items": [
+        { "name_es": "Pan artesano y tostadas", "name_en": "Artisan bread & toast", "desc_es": "Con aceite de oliva, tomate o mantequilla", "desc_en": "With olive oil, tomato or butter", "price": "" },
+        { "name_es": "Bollería casera", "name_en": "Homemade pastries", "desc_es": "Croissant, magdalenas y bizcochos del día", "desc_en": "Croissant, muffins and cakes of the day", "price": "" }
+      ]
+    },
+    {
+      "title_es": "Salado", "title_en": "Savoury",
+      "items": [
+        { "name_es": "Huevos y embutido asturiano", "name_en": "Eggs & Asturian cold cuts", "desc_es": "Jamón, chorizo y quesos de la tierra", "desc_en": "Ham, chorizo and local cheeses", "price": "" }
+      ]
+    }
+  ],
+  "restaurant_intro_es": "Cocina asturiana de producto local con pescado del día. (Contenido de ejemplo: edítalo desde el panel para poner tu carta real.)",
+  "restaurant_intro_en": "Asturian cuisine with local produce and fish of the day. (Sample content: edit it from the panel to add your real menu.)",
+  "restaurant_sections": [
+    {
+      "title_es": "Entrantes", "title_en": "Starters",
+      "items": [
+        { "name_es": "Fabada asturiana", "name_en": "Asturian fabada", "desc_es": "Guiso tradicional de fabes", "desc_en": "Traditional bean stew", "price": "" },
+        { "name_es": "Tabla de quesos de Asturias", "name_en": "Asturian cheese board", "desc_es": "Selección de quesos locales", "desc_en": "Selection of local cheeses", "price": "" }
+      ]
+    },
+    {
+      "title_es": "Principales", "title_en": "Mains",
+      "items": [
+        { "name_es": "Pescado del día", "name_en": "Fish of the day", "desc_es": "Según mercado, a la plancha o al horno", "desc_en": "Market catch, grilled or baked", "price": "" }
+      ]
+    },
+    {
+      "title_es": "Postres", "title_en": "Desserts",
+      "items": [
+        { "name_es": "Arroz con leche requemado", "name_en": "Caramelised rice pudding", "desc_es": "Postre tradicional asturiano", "desc_en": "Traditional Asturian dessert", "price": "" }
+      ]
+    }
+  ]
+}

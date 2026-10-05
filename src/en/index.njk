@@ -1,0 +1,65 @@
+---
+layout: base.njk
+permalink: /en/index.html
+lang: en
+active: inicio
+title: Hotel Playa de Aguilar **** | Muros de Nalón, Asturias
+description: Four-star hotel by Aguilar beach in Muros de Nalón, Asturias. Sea-view rooms, restaurant and direct booking.
+canonicalPath: /en/
+altEs: /
+altEn: /en/
+jsonld: true
+---
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('/assets/img/hero-1.jpg')"></div>
+  <div class="wrap">
+    <div class="stars">★★★★</div>
+    <div class="eyebrow" style="margin-top:10px">{{ home.hero_eyebrow_en }}</div>
+    <h1>{{ home.hero_h1_en }}</h1>
+    <hr class="goldrule">
+    <p class="lede">{{ home.hero_lede_en }}</p>
+    <form class="booking" onsubmit="return false" aria-label="Check availability">
+      <div class="fld"><label for="in">Check-in</label><input id="in" type="date"></div>
+      <div class="fld"><label for="out">Check-out</label><input id="out" type="date"></div>
+      <div class="fld"><label for="pax">Guests</label>
+        <select id="pax"><option>2 adults</option><option>1 adult</option><option>2 adults · 1 child</option><option>2 adults · 2 children</option><option>Family</option></select></div>
+      <div class="go"><a class="btn" href="{{ site.bookingEn }}" target="_blank" rel="noopener">Check availability</a></div>
+    </form>
+  </div>
+</section>
+<section id="hotel">
+  <div class="wrap intro-grid">
+    <div class="sec-head reveal">
+      <div class="eyebrow">The hotel</div>
+      <h2>{{ home.intro_h2_en }}</h2>
+      <p>{{ home.intro_p_en }}</p>
+      <p style="margin-top:1em"><a class="btn ghost" href="/en/rooms.html">Discover the rooms</a></p>
+    </div>
+    <div class="facts reveal">
+      {%- for f in home.facts %}
+      <div class="fact"><div class="n">{{ f.n }}</div><div class="l">{{ f.label_en }}</div></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Rooms</div><h2>Rest with a view</h2>
+      <p>Eight contemporary rooms full of natural light. Choose the green of the garden or the blue of the sea.</p></div>
+    <div class="card-grid" style="margin-top:44px">
+      {%- for r in rooms.items %}{% if loop.index <= 3 %}
+      <article class="card reveal"><div class="ph"><img src="{{ r.image }}" alt="{{ r.name_en }}" loading="lazy"></div>
+        <div class="body"><span class="tag">{{ r.tag_en }}</span><h3>{{ r.name_en }}</h3><p class="amen">{{ r.desc_en }}</p></div></article>
+      {% endif %}{%- endfor %}
+    </div>
+    <p class="center" style="margin-top:32px"><a class="btn ghost" href="/en/rooms.html">See all 8 rooms</a></p>
+  </div>
+</section>
+<section>
+  <div class="wrap split">
+    <div class="media reveal"><img src="/assets/img/restaurante.jpg" alt="Hotel restaurant" loading="lazy"></div>
+    <div class="reveal"><div class="eyebrow">Dining</div><h2 style="font-size:clamp(1.7rem,3.4vw,2.5rem); margin:.1em 0 .4em">A taste of Asturias by the sea</h2>
+      <p class="muted">Buffet breakfast, local produce and a café terrace to watch the evening fall over the sea. Fresh fish of the day, fabada stew and cider from the region.</p>
+      <p style="margin-top:1em"><a class="btn ghost" href="/en/restaurant.html">See restaurant & menus</a></p></div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+---
+layout: base.njk
+permalink: /en/surroundings.html
+lang: en
+active: entorno
+title: Surroundings | Hotel Playa de Aguilar ****
+description: Aguilar beach, Cudillero and the western coast of Asturias. Location and how to get to Hotel Playa de Aguilar.
+canonicalPath: /en/surroundings.html
+altEs: /entorno.html
+altEn: /en/surroundings.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/hero-3.jpg')"></div>
+  <div class="wrap"><div class="eyebrow">Surroundings</div><h1>A coast to explore slowly</h1></div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Between Cudillero and Muros de Nalón</h2>
+      <p>{{ surroundings.intro_en }}</p></div>
+    <div class="feat-grid" style="margin-top:44px">
+      {%- for c in surroundings.items %}
+      <div class="feat reveal"><h3>{{ c.title_en }}</h3><p>{{ c.desc_en }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap split">
+    <div class="media reveal"><img src="/assets/img/exterior.jpg" alt="Hotel Playa de Aguilar" loading="lazy"></div>
+    <div class="reveal"><div class="eyebrow">Location</div><h2 style="font-size:clamp(1.7rem,3.4vw,2.5rem); margin:.1em 0 .4em">Steps from the sand</h2>
+      <p class="muted">The hotel sits beside Aguilar beach, in Muros de Nalón, surrounded by pine woods with the sea as its horizon. The perfect base to explore the western coast of Asturias.</p>
+      <p style="margin-top:1em"><a class="btn ghost" href="/en/contact.html">How to get here</a></p></div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="map reveal"><iframe title="Map Hotel Playa de Aguilar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Hotel+Playa+de+Aguilar+Muros+de+Nal%C3%B3n+Asturias&output=embed"></iframe></div>
+  </div>
+</section>

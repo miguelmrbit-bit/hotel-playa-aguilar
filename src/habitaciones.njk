@@ -1,0 +1,27 @@
+---
+layout: base.njk
+permalink: /habitaciones.html
+lang: es
+active: habitaciones
+title: Habitaciones | Hotel Playa de Aguilar ****
+description: Ocho tipos de habitación con vistas al mar o al jardín, jacuzzi o terraza, en el Hotel Playa de Aguilar, Asturias.
+canonicalPath: /habitaciones.html
+altEs: /habitaciones.html
+altEn: /en/rooms.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/room-doble-mar.webp')"></div>
+  <div class="wrap"><div class="eyebrow">Habitaciones</div><h1>Descansar con vistas</h1></div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Ocho formas de sentir la costa</h2>
+      <p>Todas nuestras habitaciones cuentan con baño completo, wifi gratuito, TV, aire acondicionado y artículos de bienvenida. Elige la tuya.</p></div>
+    <div class="card-grid" style="margin-top:44px">
+      {%- for r in rooms.items %}
+      <article class="card reveal"><div class="ph"><img src="{{ r.image }}" alt="{{ r.name_es }}" loading="lazy"></div>
+        <div class="body"><span class="tag">{{ r.tag_es }}</span><h3>{{ r.name_es }}</h3><p class="amen">{{ r.desc_es }}</p><a class="btn" href="{{ site.bookingEs }}" target="_blank" rel="noopener">Reservar</a></div></article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

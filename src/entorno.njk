@@ -1,0 +1,39 @@
+---
+layout: base.njk
+permalink: /entorno.html
+lang: es
+active: entorno
+title: Entorno y ubicación | Hotel Playa de Aguilar ****
+description: Playa de Aguilar, Cudillero y la costa occidental de Asturias. Ubicación y cómo llegar al Hotel Playa de Aguilar.
+canonicalPath: /entorno.html
+altEs: /entorno.html
+altEn: /en/surroundings.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/hero-3.jpg')"></div>
+  <div class="wrap"><div class="eyebrow">El entorno</div><h1>Un litoral que se recorre despacio</h1></div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Entre Cudillero y Muros de Nalón</h2>
+      <p>{{ surroundings.intro_es }}</p></div>
+    <div class="feat-grid" style="margin-top:44px">
+      {%- for c in surroundings.items %}
+      <div class="feat reveal"><h3>{{ c.title_es }}</h3><p>{{ c.desc_es }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap split">
+    <div class="media reveal"><img src="/assets/img/exterior.jpg" alt="Hotel Playa de Aguilar" loading="lazy"></div>
+    <div class="reveal"><div class="eyebrow">Ubicación</div><h2 style="font-size:clamp(1.7rem,3.4vw,2.5rem); margin:.1em 0 .4em">A un paso de la arena</h2>
+      <p class="muted">El hotel se encuentra junto a la playa de Aguilar, en Muros de Nalón, rodeado de pinar y con el mar como horizonte. El punto de partida perfecto para explorar la costa occidental de Asturias.</p>
+      <p style="margin-top:1em"><a class="btn ghost" href="/contacto.html">Cómo llegar</a></p></div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="map reveal"><iframe title="Mapa Hotel Playa de Aguilar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Hotel+Playa+de+Aguilar+Muros+de+Nal%C3%B3n+Asturias&output=embed"></iframe></div>
+  </div>
+</section>

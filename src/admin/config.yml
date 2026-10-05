@@ -1,0 +1,161 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Permite editar en local con: npm run cms  (y  npx @11ty/eleventy --serve)
+local_backend: true
+
+media_folder: "src/assets/img"
+public_folder: "/assets/img"
+
+locale: "es"
+
+site_url: https://www.hotelplayadeaguilar.es
+display_url: https://www.hotelplayadeaguilar.es
+logo_url: https://www.hotelplayadeaguilar.es/assets/img/favicon.svg
+
+collections:
+  # ---------- Datos generales ----------
+  - name: "datos"
+    label: "Datos del hotel"
+    files:
+      - name: "site"
+        label: "Información general"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Nombre", name: "name", widget: "string" }
+          - { label: "Estrellas", name: "stars", widget: "string" }
+          - { label: "Teléfono (visible)", name: "phoneDisplay", widget: "string" }
+          - { label: "Teléfono (enlace tel:)", name: "phoneTel", widget: "string" }
+          - { label: "WhatsApp (nº internacional, sin +)", name: "whatsapp", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Dirección (calle)", name: "addressStreet", widget: "string" }
+          - { label: "Código postal", name: "addressPostal", widget: "string" }
+          - { label: "Localidad", name: "addressLocality", widget: "string" }
+          - { label: "Provincia", name: "addressRegion", widget: "string" }
+          - { label: "URL reservas (ES)", name: "bookingEs", widget: "string" }
+          - { label: "URL reservas (EN)", name: "bookingEn", widget: "string" }
+          - { label: "Horario recepción (ES)", name: "hoursEs", widget: "string" }
+          - { label: "Horario recepción (EN)", name: "hoursEn", widget: "string" }
+          - { label: "URL base del sitio", name: "baseUrl", widget: "string" }
+
+      - name: "home"
+        label: "Portada"
+        file: "src/_data/home.json"
+        fields:
+          - { label: "Hero · epígrafe (ES)", name: "hero_eyebrow_es", widget: "string" }
+          - { label: "Hero · epígrafe (EN)", name: "hero_eyebrow_en", widget: "string" }
+          - { label: "Hero · título (ES)", name: "hero_h1_es", widget: "string" }
+          - { label: "Hero · título (EN)", name: "hero_h1_en", widget: "string" }
+          - { label: "Hero · frase (ES)", name: "hero_lede_es", widget: "text" }
+          - { label: "Hero · frase (EN)", name: "hero_lede_en", widget: "text" }
+          - { label: "Intro · título (ES)", name: "intro_h2_es", widget: "string" }
+          - { label: "Intro · título (EN)", name: "intro_h2_en", widget: "string" }
+          - { label: "Intro · texto (ES)", name: "intro_p_es", widget: "text" }
+          - { label: "Intro · texto (EN)", name: "intro_p_en", widget: "text" }
+          - label: "Datos destacados"
+            name: "facts"
+            widget: "list"
+            fields:
+              - { label: "Número", name: "n", widget: "string" }
+              - { label: "Etiqueta (ES)", name: "label_es", widget: "string" }
+              - { label: "Etiqueta (EN)", name: "label_en", widget: "string" }
+
+  # ---------- Habitaciones ----------
+  - name: "habitaciones"
+    label: "Habitaciones"
+    files:
+      - name: "rooms"
+        label: "Lista de habitaciones"
+        file: "src/_data/rooms.json"
+        fields:
+          - label: "Habitaciones"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Foto", name: "image", widget: "image" }
+              - { label: "Etiqueta (ES)", name: "tag_es", widget: "string" }
+              - { label: "Nombre (ES)", name: "name_es", widget: "string" }
+              - { label: "Descripción (ES)", name: "desc_es", widget: "text" }
+              - { label: "Etiqueta (EN)", name: "tag_en", widget: "string" }
+              - { label: "Nombre (EN)", name: "name_en", widget: "string" }
+              - { label: "Descripción (EN)", name: "desc_en", widget: "text" }
+
+  # ---------- Servicios ----------
+  - name: "servicios"
+    label: "Servicios"
+    files:
+      - name: "services"
+        label: "Lista de servicios"
+        file: "src/_data/services.json"
+        fields:
+          - label: "Servicios"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Título (ES)", name: "title_es", widget: "string" }
+              - { label: "Descripción (ES)", name: "desc_es", widget: "text" }
+              - { label: "Título (EN)", name: "title_en", widget: "string" }
+              - { label: "Descripción (EN)", name: "desc_en", widget: "text" }
+
+  # ---------- Entorno ----------
+  - name: "entorno"
+    label: "Entorno"
+    files:
+      - name: "surroundings"
+        label: "Entorno y ubicación"
+        file: "src/_data/surroundings.json"
+        fields:
+          - { label: "Intro (ES)", name: "intro_es", widget: "text" }
+          - { label: "Intro (EN)", name: "intro_en", widget: "text" }
+          - label: "Lugares"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Título (ES)", name: "title_es", widget: "string" }
+              - { label: "Descripción (ES)", name: "desc_es", widget: "text" }
+              - { label: "Título (EN)", name: "title_en", widget: "string" }
+              - { label: "Descripción (EN)", name: "desc_en", widget: "text" }
+
+  # ---------- Cartas ----------
+  - name: "cartas"
+    label: "Cartas (restaurante y desayunos)"
+    files:
+      - name: "menus"
+        label: "Cartas"
+        file: "src/_data/menus.json"
+        fields:
+          - { label: "Restaurante · intro (ES)", name: "restaurant_intro_es", widget: "text" }
+          - { label: "Restaurante · intro (EN)", name: "restaurant_intro_en", widget: "text" }
+          - label: "Restaurante · secciones"
+            name: "restaurant_sections"
+            widget: "list"
+            fields:
+              - { label: "Sección (ES)", name: "title_es", widget: "string" }
+              - { label: "Sección (EN)", name: "title_en", widget: "string" }
+              - label: "Platos"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Nombre (ES)", name: "name_es", widget: "string" }
+                  - { label: "Nombre (EN)", name: "name_en", widget: "string" }
+                  - { label: "Descripción (ES)", name: "desc_es", widget: "string", required: false }
+                  - { label: "Descripción (EN)", name: "desc_en", widget: "string", required: false }
+                  - { label: "Precio", name: "price", widget: "string", required: false }
+          - { label: "Desayunos · intro (ES)", name: "breakfast_intro_es", widget: "text" }
+          - { label: "Desayunos · intro (EN)", name: "breakfast_intro_en", widget: "text" }
+          - label: "Desayunos · secciones"
+            name: "breakfast_sections"
+            widget: "list"
+            fields:
+              - { label: "Sección (ES)", name: "title_es", widget: "string" }
+              - { label: "Sección (EN)", name: "title_en", widget: "string" }
+              - label: "Platos"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Nombre (ES)", name: "name_es", widget: "string" }
+                  - { label: "Nombre (EN)", name: "name_en", widget: "string" }
+                  - { label: "Descripción (ES)", name: "desc_es", widget: "string", required: false }
+                  - { label: "Descripción (EN)", name: "desc_en", widget: "string", required: false }
+                  - { label: "Precio", name: "price", widget: "string", required: false }

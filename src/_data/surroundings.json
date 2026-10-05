@@ -1,0 +1,18 @@
+{
+  "intro_es": "La Reserva de la Biosfera del occidente asturiano regala playas salvajes, pueblos marineros y bosque atlántico a las puertas del hotel.",
+  "intro_en": "The Biosphere Reserve of western Asturias offers wild beaches, fishing villages and Atlantic forest at the hotel's doorstep.",
+  "items": [
+    { "title_es": "Playa de Aguilar", "desc_es": "Arena dorada, socorristas en temporada y una de las mejores puestas de sol de la costa, a pocos minutos a pie.",
+      "title_en": "Aguilar beach", "desc_en": "Golden sand, lifeguards in season and one of the finest sunsets on the coast, a few minutes' walk away." },
+    { "title_es": "Cudillero", "desc_es": "El pueblo pesquero más fotogénico de Asturias, con sus casas en anfiteatro sobre el puerto, a un cuarto de hora.",
+      "title_en": "Cudillero", "desc_en": "The most photogenic fishing village in Asturias, its houses tiered above the harbour, a quarter of an hour away." },
+    { "title_es": "Senderismo y naturaleza", "desc_es": "Rutas costeras y de bosque, miradores y acantilados para descubrir el occidente asturiano a pie.",
+      "title_en": "Hiking & nature", "desc_en": "Coastal and forest trails, viewpoints and cliffs to discover western Asturias on foot." },
+    { "title_es": "Sabor asturiano", "desc_es": "Sidrerías, pescado fresco y fabada en los pueblos cercanos. Gastronomía de mar y monte.",
+      "title_en": "Asturian flavour", "desc_en": "Cider houses, fresh fish and fabada in the nearby villages. Sea-and-mountain cuisine." },
+    { "title_es": "Cómo llegar", "desc_es": "A una hora de Oviedo y Gijón, y del aeropuerto de Asturias. Acceso cómodo por la A-8.",
+      "title_en": "Getting here", "desc_en": "One hour from Oviedo, Gijón and Asturias airport. Easy access via the A-8 motorway." },
+    { "title_es": "Escapadas", "desc_es": "Luarca, Cabo Vidio, las playas de Cudillero y los bosques del interior, a un corto trayecto.",
+      "title_en": "Day trips", "desc_en": "Luarca, Cabo Vidio, the beaches of Cudillero and the inland forests, all a short drive away." }
+  ]
+}

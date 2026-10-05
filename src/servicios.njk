@@ -1,0 +1,33 @@
+---
+layout: base.njk
+permalink: /servicios.html
+lang: es
+active: servicios
+title: Servicios | Hotel Playa de Aguilar ****
+description: Restaurante, desayuno buffet, cafetería con terraza, wifi, parking y más en el Hotel Playa de Aguilar.
+canonicalPath: /servicios.html
+altEs: /servicios.html
+altEn: /en/services.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/cafeteria.jpg')"></div>
+  <div class="wrap"><div class="eyebrow">Servicios</div><h1>Todo para tu estancia</h1></div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Comodidades del hotel</h2><p>Pensado para que solo te preocupes de disfrutar del mar y del bosque.</p></div>
+    <div class="feat-grid" style="margin-top:44px">
+      {%- for s in services.items %}
+      <div class="feat reveal"><h3>{{ s.title_es }}</h3><p>{{ s.desc_es }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap split rev">
+    <div class="media reveal"><img src="/assets/img/desayuno.jpg" alt="Desayuno del hotel" loading="lazy"></div>
+    <div class="reveal"><div class="eyebrow">Gastronomía</div><h2 style="font-size:clamp(1.7rem,3.4vw,2.5rem); margin:.1em 0 .4em">Empieza el día como se merece</h2>
+      <p class="muted">Nuestro desayuno buffet combina producto local, repostería casera y opciones saludables. Consulta la carta de desayunos y la del restaurante.</p>
+      <p style="margin-top:1em"><a class="btn ghost" href="/restaurante.html">Ver las cartas</a></p></div>
+  </div>
+</section>

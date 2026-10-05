@@ -1,0 +1,48 @@
+---
+layout: base.njk
+permalink: /en/restaurant.html
+lang: en
+active: restaurante
+title: Restaurant & menus | Hotel Playa de Aguilar ****
+description: Restaurant menu and breakfast menu at Hotel Playa de Aguilar. Asturian cuisine with local produce by the Cantabrian Sea.
+canonicalPath: /en/restaurant.html
+altEs: /restaurante.html
+altEn: /en/restaurant.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/restaurante.jpg')"></div>
+  <div class="wrap"><div class="eyebrow">Restaurant</div><h1>A taste of Asturias by the sea</h1></div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Restaurant menu</div><h2>Our kitchen</h2>
+      <p>{{ menus.restaurant_intro_en }}</p></div>
+    <div class="menu">
+      {%- for sec in menus.restaurant_sections %}
+      <div class="menu-sec reveal"><h3>{{ sec.title_en }}</h3>
+        {%- for it in sec.items %}
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">{{ it.name_en }}</span>{% if it.price %}<span class="mi-price">{{ it.price }}</span>{% endif %}</div>{% if it.desc_en %}<p class="mi-desc">{{ it.desc_en }}</p>{% endif %}</div>
+        {%- endfor %}
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Breakfast menu</div><h2>To start the day</h2>
+      <p>{{ menus.breakfast_intro_en }}</p></div>
+    <div class="menu">
+      {%- for sec in menus.breakfast_sections %}
+      <div class="menu-sec reveal"><h3>{{ sec.title_en }}</h3>
+        {%- for it in sec.items %}
+        <div class="menu-item"><div class="mi-main"><span class="mi-name">{{ it.name_en }}</span>{% if it.price %}<span class="mi-price">{{ it.price }}</span>{% endif %}</div>{% if it.desc_en %}<p class="mi-desc">{{ it.desc_en }}</p>{% endif %}</div>
+        {%- endfor %}
+      </div>
+      {%- endfor %}
+    </div>
+    <p class="center" style="margin-top:36px"><a class="btn" href="{{ site.bookingEn }}" target="_blank" rel="noopener">Book your stay</a></p>
+  </div>
+</section>

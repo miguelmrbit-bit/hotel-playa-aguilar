@@ -1,0 +1,13 @@
+Coloca aquí el archivo oficial de logos del Kit Digital con este nombre EXACTO:
+
+    kit-digital-logos.png
+
+Debe contener el pack oficial (banda horizontal, fondo transparente o blanco):
+  - Plan de Recuperación, Transformación y Resiliencia
+  - Financiado por la Unión Europea – NextGenerationEU
+  - Gobierno de España
+  - Red.es
+  - Kit Digital
+
+Te lo proporciona tu Agente Digitalizador / el programa. Al dejar el PNG con ese
+nombre en esta carpeta, aparecerá automáticamente en el footer de todas las páginas.

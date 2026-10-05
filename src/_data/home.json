@@ -1,0 +1,18 @@
+{
+  "hero_eyebrow_es": "Muros de Nalón · Costa de Asturias",
+  "hero_eyebrow_en": "Muros de Nalón · Asturian coast",
+  "hero_h1_es": "Entre el bosque y el mar",
+  "hero_h1_en": "Between the forest and the sea",
+  "hero_lede_es": "Un hotel de cuatro estrellas a un paso de la playa de Aguilar, donde el pinar se asoma al Cantábrico.",
+  "hero_lede_en": "A four-star hotel steps from Aguilar beach, where the pine woods lean over the Cantabrian Sea.",
+  "intro_h2_es": "Naturaleza, calma y Cantábrico",
+  "intro_h2_en": "Nature, calm and the Cantabrian Sea",
+  "intro_p_es": "El Hotel Playa de Aguilar nace donde termina el bosque y empieza la arena. Habitaciones amplias con vistas al mar o al jardín, gastronomía asturiana de kilómetro cero y el rumor del oleaje como única banda sonora. Un refugio para desconectar en una de las costas más verdes de España.",
+  "intro_p_en": "Hotel Playa de Aguilar sits where the forest ends and the sand begins. Spacious rooms with sea or garden views, local Asturian cuisine and the sound of the waves as the only soundtrack. A retreat to unwind on one of the greenest coasts in Spain.",
+  "facts": [
+    { "n": "4★", "label_es": "Categoría superior", "label_en": "Superior category" },
+    { "n": "300 m", "label_es": "A la playa de Aguilar", "label_en": "To Aguilar beach" },
+    { "n": "8", "label_es": "Tipos de habitación", "label_en": "Room types" },
+    { "n": "1 h", "label_es": "De Oviedo y Gijón", "label_en": "From Oviedo & Gijón" }
+  ]
+}

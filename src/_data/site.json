@@ -1,0 +1,17 @@
+{
+  "name": "Hotel Playa de Aguilar",
+  "stars": "★★★★",
+  "phoneDisplay": "985 58 01 41",
+  "phoneTel": "+34985580141",
+  "whatsapp": "34639658955",
+  "email": "hotel@hotelplayadeaguilar.es",
+  "addressStreet": "Playa de Aguilar",
+  "addressPostal": "33156",
+  "addressLocality": "Muros de Nalón",
+  "addressRegion": "Asturias",
+  "bookingEs": "https://direct-book.com/properties/hotelplayadeaguilar?locale=es",
+  "bookingEn": "https://direct-book.com/properties/hotelplayadeaguilar?locale=en",
+  "hoursEs": "Todos los días · 8:00 – 23:00",
+  "hoursEn": "Every day · 8:00 – 23:00",
+  "baseUrl": "https://www.hotelplayadeaguilar.es"
+}
