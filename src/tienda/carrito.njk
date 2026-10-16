@@ -1,0 +1,35 @@
+---
+layout: base.njk
+permalink: /tienda/carrito.html
+lang: es
+active: tienda
+title: Carrito | Hotel Playa de Aguilar ****
+description: Carrito de la compra de bonos regalo del Hotel Playa de Aguilar.
+canonicalPath: /tienda/carrito.html
+altEs: /tienda/carrito.html
+altEn: /en/shop/cart.html
+---
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Tienda</div><h2>Tu carrito</h2></div>
+
+    <div id="cart-wrap">
+      <table class="cart-table">
+        <thead>
+          <tr><th>Producto</th><th class="num">Precio</th><th>Cantidad</th><th class="num">Subtotal</th><th></th></tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+      </table>
+      <div class="cart-total"><span>Total</span> <span class="price" id="cart-total-val">0,00 €</span></div>
+      <div class="cart-actions">
+        <a class="btn ghost" href="/tienda.html">← Seguir comprando</a>
+        <a class="btn" href="/tienda/checkout.html">Finalizar compra →</a>
+      </div>
+    </div>
+
+    <div class="cart-empty" id="cart-empty" style="display:none">
+      <p>Tu carrito está vacío.</p>
+      <a class="btn" href="/tienda.html">Ver bonos regalo</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+---
+layout: base.njk
+permalink: /en/shop/thank-you.html
+lang: en
+active: tienda
+title: Thank you for your order! | Hotel Playa de Aguilar ****
+description: We have received your gift voucher order. Make the bank transfer so we can issue your voucher.
+canonicalPath: /en/shop/thank-you.html
+altEs: /tienda/gracias.html
+altEn: /en/shop/thank-you.html
+---
+<section>
+  <div class="wrap" style="max-width:720px">
+    <div class="sec-head reveal" id="pedido-ok"><div class="eyebrow">Order received</div><h2>Thank you for your purchase!</h2>
+      <p>We've received your order. To complete it, make a <strong>bank transfer</strong> for the amount shown. As soon as we receive it, we'll send you the <strong>voucher in digital format (PDF) by email</strong>.</p></div>
+
+    <div class="bank-box reveal" style="margin-top:8px">
+      <strong>Bank transfer details</strong>
+      <p style="margin:8px 0 2px">Account holder: {{ bonos.titular }}</p>
+      <p style="margin:0 0 6px">IBAN: <span class="iban">{{ bonos.iban }}</span></p>
+      <p class="muted" style="margin:0; font-size:.86rem">Add your name and "Gift voucher" as the transfer reference.</p>
+    </div>
+
+    <p style="margin-top:26px"><a class="btn" href="/en/shop.html">Back to shop</a>
+      <a class="btn ghost" href="/en/index.html" style="margin-left:10px">Go to website</a></p>
+
+    <p class="muted" style="margin-top:22px; font-size:.9rem">Questions about your order? Email us at <a href="mailto:{{ site.email }}">{{ site.email }}</a> or call <a href="tel:{{ site.phoneTel }}">{{ site.phoneDisplay }}</a>.</p>
+  </div>
+</section>

@@ -12,6 +12,16 @@ eleventyExcludeFromCollections: true
   <url><loc>{{ site.baseUrl }}/servicios.html</loc><priority>0.8</priority></url>
   <url><loc>{{ site.baseUrl }}/restaurante.html</loc><priority>0.8</priority></url>
   <url><loc>{{ site.baseUrl }}/entorno.html</loc><priority>0.8</priority></url>
+  <url><loc>{{ site.baseUrl }}/tienda.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.baseUrl }}/tienda.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.baseUrl }}/en/shop.html"/>
+    <priority>0.9</priority></url>
+  {%- for b in bonos.items %}
+  <url><loc>{{ site.baseUrl }}/tienda/{{ b.slug }}/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.baseUrl }}/tienda/{{ b.slug }}/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.baseUrl }}/en/shop/{{ b.slug }}/"/>
+    <priority>0.7</priority></url>
+  {%- endfor %}
   <url><loc>{{ site.baseUrl }}/contacto.html</loc><priority>0.8</priority></url>
   <url><loc>{{ site.baseUrl }}/aviso-legal.html</loc><priority>0.2</priority></url>
   <url><loc>{{ site.baseUrl }}/privacidad.html</loc><priority>0.2</priority></url>
@@ -22,5 +32,9 @@ eleventyExcludeFromCollections: true
   <url><loc>{{ site.baseUrl }}/en/services.html</loc><priority>0.7</priority></url>
   <url><loc>{{ site.baseUrl }}/en/restaurant.html</loc><priority>0.7</priority></url>
   <url><loc>{{ site.baseUrl }}/en/surroundings.html</loc><priority>0.7</priority></url>
+  <url><loc>{{ site.baseUrl }}/en/shop.html</loc><priority>0.8</priority></url>
+  {%- for b in bonos.items %}
+  <url><loc>{{ site.baseUrl }}/en/shop/{{ b.slug }}/</loc><priority>0.6</priority></url>
+  {%- endfor %}
   <url><loc>{{ site.baseUrl }}/en/contact.html</loc><priority>0.7</priority></url>
 </urlset>

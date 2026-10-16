@@ -1,0 +1,53 @@
+---
+layout: base.njk
+permalink: /tienda.html
+lang: es
+active: tienda
+title: Tienda · Bonos regalo | Hotel Playa de Aguilar ****
+description: Compra bonos regalo del Hotel Playa de Aguilar (4★): escapadas, estancias, cena para dos y tarjetas regalo. Pago por transferencia y entrega en formato digital por email.
+canonicalPath: /tienda.html
+altEs: /tienda.html
+altEn: /en/shop.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/hero-2.jpg')"></div>
+  <div class="wrap"><div class="eyebrow">Tienda online</div><h1>Bonos regalo</h1></div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Comercio electrónico</div><h2>Regala una experiencia frente al mar</h2>
+      <p>Elige tu bono regalo del Hotel Playa de Aguilar. Tras la compra recibirás el bono <strong>en formato digital por email</strong>; el pago se realiza por <strong>transferencia bancaria</strong>. Bonos canjeables durante 12 meses.</p></div>
+
+    <div class="shop-tools reveal">
+      <div class="shop-filters" role="group" aria-label="Filtrar por categoría">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">Todas</button>
+        <button class="chip" type="button" data-filter="experiencias" aria-pressed="false">Experiencias</button>
+        <button class="chip" type="button" data-filter="estancias" aria-pressed="false">Estancias</button>
+        <button class="chip" type="button" data-filter="gastronomia" aria-pressed="false">Gastronomía</button>
+        <button class="chip" type="button" data-filter="tarjetas-regalo" aria-pressed="false">Tarjetas regalo</button>
+      </div>
+      <span class="shop-count" id="shop-count">Página 1 de 1 · 6 resultados</span>
+    </div>
+
+    <div class="card-grid" id="shop-grid" style="margin-top:22px">
+      {%- for b in bonos.items %}
+      <article class="card reveal" data-cat="{{ b.cat_slug }}">
+        <a class="ph" href="/tienda/{{ b.slug }}/" aria-label="{{ b.name_es }}"><img src="{{ b.image }}" alt="{{ b.name_es }}" loading="lazy"></a>
+        <div class="body">
+          <span class="tag">{{ b.cat_es }}</span>
+          <h3><a href="/tienda/{{ b.slug }}/" style="text-decoration:none">{{ b.name_es }}</a></h3>
+          <p class="amen">{{ b.short_es }}</p>
+          <span class="price">{{ b.price }} €</span>
+          <a class="btn" href="/tienda/{{ b.slug }}/">Ver bono</a>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+
+    <nav class="pager" aria-label="Paginación de resultados">
+      <span class="pg" aria-current="page">1</span>
+      <span>Página 1 de 1 · 6 resultados</span>
+    </nav>
+  </div>
+</section>

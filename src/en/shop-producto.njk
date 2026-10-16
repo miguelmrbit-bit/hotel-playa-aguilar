@@ -1,0 +1,44 @@
+---
+layout: base.njk
+lang: en
+active: tienda
+pagination:
+  data: bonos.items
+  size: 1
+  alias: b
+permalink: "/en/shop/{{ b.slug }}/"
+---
+<section style="padding-top:clamp(28px,5vw,56px)">
+  <div class="wrap">
+    <p class="muted" style="font-size:.86rem; margin:0 0 18px"><a href="/en/shop.html" style="text-decoration:none">← Back to shop</a> · {{ b.cat_en }}</p>
+    <div class="prod-grid">
+      <div class="prod-media reveal"><img src="{{ b.image }}" alt="{{ b.name_en }}"></div>
+      <div class="prod-info reveal">
+        <span class="tag">{{ b.cat_en }}</span>
+        <h1>{{ b.name_en }}</h1>
+        <span class="price">{{ b.price }} €</span>
+        <p>{{ b.desc_en }}</p>
+
+        <div class="buy-row">
+          <div class="qty">
+            <button type="button" id="qty-dec" aria-label="Remove one">−</button>
+            <input type="text" id="qty" value="1" inputmode="numeric" aria-label="Quantity">
+            <button type="button" id="qty-inc" aria-label="Add one">+</button>
+          </div>
+          <button class="btn" type="button" id="add-to-cart"
+            data-slug="{{ b.slug }}" data-sku="{{ b.sku }}" data-name="{{ b.name_en }}"
+            data-price="{{ b.price }}" data-image="{{ b.image }}">Add to cart</button>
+        </div>
+
+        <div class="prod-note">
+          <p style="margin:0 0 6px"><strong>Delivery:</strong> digital format — you'll receive the voucher by email once payment is confirmed.</p>
+          <p style="margin:0 0 6px"><strong>Payment:</strong> bank transfer.</p>
+          <p style="margin:0"><strong>Validity:</strong> redeemable for 12 months, subject to availability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"{{ b.name_en }}","image":"{{ site.baseUrl }}{{ b.image }}","description":"{{ b.short_en }}","sku":"{{ b.sku }}","brand":{"@type":"Brand","name":"Hotel Playa de Aguilar"},"offers":{"@type":"Offer","price":"{{ b.price }}","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"{{ site.baseUrl }}/en/shop/{{ b.slug }}/"}}
+</script>

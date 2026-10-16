@@ -1,0 +1,29 @@
+---
+layout: base.njk
+permalink: /tienda/gracias.html
+lang: es
+active: tienda
+title: ¡Gracias por tu pedido! | Hotel Playa de Aguilar ****
+description: Hemos recibido tu pedido de bono regalo. Realiza la transferencia para que podamos emitir tu bono.
+canonicalPath: /tienda/gracias.html
+altEs: /tienda/gracias.html
+altEn: /en/shop/thank-you.html
+---
+<section>
+  <div class="wrap" style="max-width:720px">
+    <div class="sec-head reveal" id="pedido-ok"><div class="eyebrow">Pedido recibido</div><h2>¡Gracias por tu compra!</h2>
+      <p>Hemos recibido tu pedido. Para completarlo, realiza una <strong>transferencia bancaria</strong> por el importe indicado. En cuanto la recibamos, te enviaremos el <strong>bono en formato digital (PDF) por email</strong>.</p></div>
+
+    <div class="bank-box reveal" style="margin-top:8px">
+      <strong>Datos para la transferencia</strong>
+      <p style="margin:8px 0 2px">Titular: {{ bonos.titular }}</p>
+      <p style="margin:0 0 6px">IBAN: <span class="iban">{{ bonos.iban }}</span></p>
+      <p class="muted" style="margin:0; font-size:.86rem">Indica tu nombre y "Bono regalo" en el concepto de la transferencia.</p>
+    </div>
+
+    <p style="margin-top:26px"><a class="btn" href="/tienda.html">Volver a la tienda</a>
+      <a class="btn ghost" href="/index.html" style="margin-left:10px">Ir a la web</a></p>
+
+    <p class="muted" style="margin-top:22px; font-size:.9rem">¿Dudas con tu pedido? Escríbenos a <a href="mailto:{{ site.email }}">{{ site.email }}</a> o llámanos al <a href="tel:{{ site.phoneTel }}">{{ site.phoneDisplay }}</a>.</p>
+  </div>
+</section>

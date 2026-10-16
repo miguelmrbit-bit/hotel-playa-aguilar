@@ -159,3 +159,34 @@ collections:
                   - { label: "Descripción (ES)", name: "desc_es", widget: "string", required: false }
                   - { label: "Descripción (EN)", name: "desc_en", widget: "string", required: false }
                   - { label: "Precio", name: "price", widget: "string", required: false }
+
+  # ---------- Tienda · Bonos regalo ----------
+  - name: "tienda"
+    label: "Tienda (bonos regalo)"
+    files:
+      - name: "bonos"
+        label: "Bonos y datos de pago"
+        file: "src/_data/bonos.json"
+        fields:
+          - { label: "IBAN (transferencia)", name: "iban", widget: "string" }
+          - { label: "Titular de la cuenta", name: "titular", widget: "string" }
+          - label: "Bonos (productos)"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name_es}} · {{fields.price}} €"
+            fields:
+              - { label: "Slug (URL, sin espacios)", name: "slug", widget: "string", hint: "Ej.: bono-romantica. No cambiar si ya está publicado." }
+              - { label: "Referencia (SKU)", name: "sku", widget: "string" }
+              - { label: "Orden", name: "order", widget: "number", value_type: "int", default: 1 }
+              - { label: "Destacado", name: "featured", widget: "boolean", default: false, required: false }
+              - { label: "Precio (€)", name: "price", widget: "number", value_type: "int" }
+              - { label: "Imagen", name: "image", widget: "image" }
+              - { label: "Categoría · slug", name: "cat_slug", widget: "select", options: ["experiencias", "estancias", "gastronomia", "tarjetas-regalo"] }
+              - { label: "Categoría (ES)", name: "cat_es", widget: "string" }
+              - { label: "Categoría (EN)", name: "cat_en", widget: "string" }
+              - { label: "Nombre (ES)", name: "name_es", widget: "string" }
+              - { label: "Nombre (EN)", name: "name_en", widget: "string" }
+              - { label: "Resumen corto (ES)", name: "short_es", widget: "text" }
+              - { label: "Resumen corto (EN)", name: "short_en", widget: "text" }
+              - { label: "Descripción (ES)", name: "desc_es", widget: "text" }
+              - { label: "Descripción (EN)", name: "desc_en", widget: "text" }

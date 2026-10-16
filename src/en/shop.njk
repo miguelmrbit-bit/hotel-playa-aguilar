@@ -1,0 +1,53 @@
+---
+layout: base.njk
+permalink: /en/shop.html
+lang: en
+active: tienda
+title: Shop · Gift vouchers | Hotel Playa de Aguilar ****
+description: Buy gift vouchers for Hotel Playa de Aguilar (4★): getaways, stays, dinner for two and gift cards. Payment by bank transfer and digital delivery by email.
+canonicalPath: /en/shop.html
+altEs: /tienda.html
+altEn: /en/shop.html
+---
+<section class="hero short">
+  <div class="hero-bg" style="background-image:url('/assets/img/hero-2.jpg')"></div>
+  <div class="wrap"><div class="eyebrow">Online shop</div><h1>Gift vouchers</h1></div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">E-commerce</div><h2>Give an experience by the sea</h2>
+      <p>Choose your Hotel Playa de Aguilar gift voucher. After purchase you'll receive the voucher <strong>in digital format by email</strong>; payment is made by <strong>bank transfer</strong>. Vouchers valid for 12 months.</p></div>
+
+    <div class="shop-tools reveal">
+      <div class="shop-filters" role="group" aria-label="Filter by category">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="experiencias" aria-pressed="false">Experiences</button>
+        <button class="chip" type="button" data-filter="estancias" aria-pressed="false">Stays</button>
+        <button class="chip" type="button" data-filter="gastronomia" aria-pressed="false">Gastronomy</button>
+        <button class="chip" type="button" data-filter="tarjetas-regalo" aria-pressed="false">Gift cards</button>
+      </div>
+      <span class="shop-count" id="shop-count">Page 1 of 1 · 6 results</span>
+    </div>
+
+    <div class="card-grid" id="shop-grid" style="margin-top:22px">
+      {%- for b in bonos.items %}
+      <article class="card reveal" data-cat="{{ b.cat_slug }}">
+        <a class="ph" href="/en/shop/{{ b.slug }}/" aria-label="{{ b.name_en }}"><img src="{{ b.image }}" alt="{{ b.name_en }}" loading="lazy"></a>
+        <div class="body">
+          <span class="tag">{{ b.cat_en }}</span>
+          <h3><a href="/en/shop/{{ b.slug }}/" style="text-decoration:none">{{ b.name_en }}</a></h3>
+          <p class="amen">{{ b.short_en }}</p>
+          <span class="price">{{ b.price }} €</span>
+          <a class="btn" href="/en/shop/{{ b.slug }}/">View voucher</a>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+
+    <nav class="pager" aria-label="Results pagination">
+      <span class="pg" aria-current="page">1</span>
+      <span>Page 1 of 1 · 6 results</span>
+    </nav>
+  </div>
+</section>

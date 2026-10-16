@@ -41,6 +41,7 @@
       <a href="/servicios.html"{% if active == 'servicios' %} class="active"{% endif %}>Servicios</a>
       <a href="/restaurante.html"{% if active == 'restaurante' %} class="active"{% endif %}>Restaurante</a>
       <a href="/entorno.html"{% if active == 'entorno' %} class="active"{% endif %}>Entorno</a>
+      <a href="/tienda.html"{% if active == 'tienda' %} class="active"{% endif %}>Tienda<span class="cart-badge" data-cart-count style="display:none">0</span></a>
       <a href="/contacto.html"{% if active == 'contacto' %} class="active"{% endif %}>Contacto</a>
     {%- else %}
       <a href="/en/index.html"{% if active == 'inicio' %} class="active"{% endif %}>Home</a>
@@ -48,6 +49,7 @@
       <a href="/en/services.html"{% if active == 'servicios' %} class="active"{% endif %}>Services</a>
       <a href="/en/restaurant.html"{% if active == 'restaurante' %} class="active"{% endif %}>Restaurant</a>
       <a href="/en/surroundings.html"{% if active == 'entorno' %} class="active"{% endif %}>Surroundings</a>
+      <a href="/en/shop.html"{% if active == 'tienda' %} class="active"{% endif %}>Shop<span class="cart-badge" data-cart-count style="display:none">0</span></a>
       <a href="/en/contact.html"{% if active == 'contacto' %} class="active"{% endif %}>Contact</a>
     {%- endif %}
     </nav>
@@ -97,6 +99,7 @@
           <a href="/servicios.html">Servicios</a><br>
           <a href="/restaurante.html">Restaurante y cartas</a><br>
           <a href="/entorno.html">Entorno</a><br>
+          <a href="/tienda.html">Tienda · bonos regalo</a><br>
           <a href="/contacto.html">Contacto</a>
         </p>
         {%- else %}
@@ -105,6 +108,7 @@
           <a href="/en/services.html">Services</a><br>
           <a href="/en/restaurant.html">Restaurant & menus</a><br>
           <a href="/en/surroundings.html">Surroundings</a><br>
+          <a href="/en/shop.html">Shop · gift vouchers</a><br>
           <a href="/en/contact.html">Contact</a>
         </p>
         {%- endif %}
@@ -125,6 +129,7 @@
   </div>
 </footer>
 <script src="/assets/js/site.js"></script>
+<script src="/assets/js/tienda.js" defer></script>
 <!-- Netlify Identity: gestiona la invitación/acceso al panel /admin/ -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>

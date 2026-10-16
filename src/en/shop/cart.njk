@@ -1,0 +1,35 @@
+---
+layout: base.njk
+permalink: /en/shop/cart.html
+lang: en
+active: tienda
+title: Cart | Hotel Playa de Aguilar ****
+description: Shopping cart for Hotel Playa de Aguilar gift vouchers.
+canonicalPath: /en/shop/cart.html
+altEs: /tienda/carrito.html
+altEn: /en/shop/cart.html
+---
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Shop</div><h2>Your cart</h2></div>
+
+    <div id="cart-wrap">
+      <table class="cart-table">
+        <thead>
+          <tr><th>Product</th><th class="num">Price</th><th>Quantity</th><th class="num">Subtotal</th><th></th></tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+      </table>
+      <div class="cart-total"><span>Total</span> <span class="price" id="cart-total-val">€0.00</span></div>
+      <div class="cart-actions">
+        <a class="btn ghost" href="/en/shop.html">← Continue shopping</a>
+        <a class="btn" href="/en/shop/checkout.html">Checkout →</a>
+      </div>
+    </div>
+
+    <div class="cart-empty" id="cart-empty" style="display:none">
+      <p>Your cart is empty.</p>
+      <a class="btn" href="/en/shop.html">View gift vouchers</a>
+    </div>
+  </div>
+</section>

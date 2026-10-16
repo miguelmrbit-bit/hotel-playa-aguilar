@@ -1,0 +1,71 @@
+---
+layout: base.njk
+permalink: /en/shop/checkout.html
+lang: en
+active: tienda
+title: Checkout | Hotel Playa de Aguilar ****
+description: Complete your gift voucher purchase. Payment by bank transfer and digital delivery by email.
+canonicalPath: /en/shop/checkout.html
+altEs: /tienda/checkout.html
+altEn: /en/shop/checkout.html
+---
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><div class="eyebrow">Shop</div><h2>Checkout</h2>
+      <p>Fill in your details. You'll receive the voucher in <strong>digital format by email</strong> once we confirm the <strong>bank transfer</strong>.</p></div>
+
+    <div class="cart-empty" id="co-empty" style="display:none">
+      <p>Your cart is empty.</p>
+      <a class="btn" href="/en/shop.html">View gift vouchers</a>
+    </div>
+
+    <form class="co-grid" id="form-pedido" name="pedido-bono" method="POST"
+          data-netlify="true" netlify-honeypot="bot-field" action="/en/shop/thank-you.html">
+      <input type="hidden" name="form-name" value="pedido-bono">
+      <p hidden><label>Do not fill: <input name="bot-field"></label></p>
+      <textarea id="pedido-resumen" name="pedido" hidden></textarea>
+      <input type="hidden" id="pedido-total" name="total">
+
+      <div>
+        <h3 style="margin-top:0">Your details</h3>
+        <div class="two-col">
+          <div class="field"><label for="f-nombre">Full name *</label><input id="f-nombre" name="nombre" required></div>
+          <div class="field"><label for="f-tel">Phone</label><input id="f-tel" name="telefono" inputmode="tel"></div>
+        </div>
+        <div class="field"><label for="f-email">Email *</label><input id="f-email" type="email" name="email" required></div>
+        <div class="field"><label for="f-dest">Recipient's name (optional)</label><input id="f-dest" name="destinatario"></div>
+        <div class="field"><label for="f-msg">Message or dedication (optional)</label><textarea id="f-msg" name="mensaje" rows="3"></textarea></div>
+
+        <fieldset class="method">
+          <legend>Payment method</legend>
+          <div class="opt">
+            <input type="radio" id="pago-transf" name="metodo_pago" value="Bank transfer" checked required>
+            <label for="pago-transf">Bank transfer<span class="d">We'll send you the details and amount; once the transfer arrives we issue the voucher.</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="method">
+          <legend>Delivery method</legend>
+          <div class="opt">
+            <input type="radio" id="envio-digital" name="envio" value="Digital format (email)" checked required>
+            <label for="envio-digital">Digital format (email) · €0.00<span class="d">The voucher is sent as a PDF to the email provided. No shipping costs.</span></label>
+          </div>
+        </fieldset>
+
+        <button class="btn" type="submit" style="margin-top:6px">Confirm order</button>
+      </div>
+
+      <aside class="co-summary reveal">
+        <h2>Summary</h2>
+        <div id="co-lines"></div>
+        <div class="co-line tot"><span>Total</span><span class="num" id="co-total">€0.00</span></div>
+        <div class="bank-box">
+          <strong>Payment by bank transfer</strong>
+          <p style="margin:8px 0 2px">Account holder: {{ bonos.titular }}</p>
+          <p style="margin:0 0 6px">IBAN: <span class="iban">{{ bonos.iban }}</span></p>
+          <p class="muted" style="margin:0; font-size:.84rem">Add your name as the transfer reference. As soon as we receive payment, we'll email you the voucher.</p>
+        </div>
+      </aside>
+    </form>
+  </div>
+</section>
