@@ -2,9 +2,133 @@
   "restaurantPdf": "/assets/cartas/carta-restaurante.pdf",
   "breakfastPdf": "/assets/cartas/carta-desayunos.pdf",
 
-  "restaurant_intro_es": "Cocina asturiana de producto local y pescado del día, frente al Cantábrico. Consulta nuestra carta completa.",
-  "restaurant_intro_en": "Asturian cuisine with local produce and fish of the day, facing the Cantabrian Sea. See our full menu.",
-  "restaurant_sections": [],
+  "restaurant_intro_es": "Cocina asturiana de producto local y pescado del día, frente al Cantábrico. Servicio de pan: 1,90 € por persona.",
+  "restaurant_intro_en": "Asturian cuisine with local produce and fish of the day, facing the Cantabrian Sea. Bread service: €1.90 per person.",
+  "restaurant_sections": [
+    {
+      "title_es": "Entrantes y ensaladas", "title_en": "Starters & salads",
+      "items": [
+        { "name_es": "Ensalada de quesos asturianos con aliño de miel y nueces", "name_en": "Ensalada de quesos asturianos con aliño de miel y nueces", "desc_es": "", "desc_en": "", "price": "16,90 €" },
+        { "name_es": "Ensalada de pixín, langostinos y crujiente de jamón", "name_en": "Ensalada de pixín, langostinos y crujiente de jamón", "desc_es": "", "desc_en": "", "price": "19,90 €" },
+        { "name_es": "Tomate picao con ventresca de bonito y aceitunas", "name_en": "Tomate picao con ventresca de bonito y aceitunas", "desc_es": "", "desc_en": "", "price": "18,00 €" },
+        { "name_es": "Ensalada de cecina y queso de cabra", "name_en": "Ensalada de cecina y queso de cabra", "desc_es": "", "desc_en": "", "price": "18,90 €" },
+        { "name_es": "Ensalada de jamón ibérico y mimosa de Afuega'l Pitu", "name_en": "Ensalada de jamón ibérico y mimosa de Afuega'l Pitu", "desc_es": "", "desc_en": "", "price": "18,90 €" },
+        { "name_es": "Ensalada verde LTC", "name_en": "Ensalada verde LTC", "desc_es": "", "desc_en": "", "price": "12,00 €" },
+        { "name_es": "Croquetas ibéricas (8 uds.)", "name_en": "Croquetas ibéricas (8 uds.)", "desc_es": "", "desc_en": "", "price": "14,50 €" },
+        { "name_es": "Croquetas de chipirones (8 uds.)", "name_en": "Croquetas de chipirones (8 uds.)", "desc_es": "", "desc_en": "", "price": "14,50 €" },
+        { "name_es": "Crema de setas", "name_en": "Crema de setas", "desc_es": "", "desc_en": "", "price": "9,90 €" },
+        { "name_es": "Crema de nécoras", "name_en": "Crema de nécoras", "desc_es": "", "desc_en": "", "price": "14,00 €" },
+        { "name_es": "Salteado de verduras", "name_en": "Salteado de verduras", "desc_es": "", "desc_en": "", "price": "15,00 €" },
+        { "name_es": "Tabla de quesos asturianos", "name_en": "Tabla de quesos asturianos", "desc_es": "", "desc_en": "", "price": "22,00 €" },
+        { "name_es": "Cecina de Angus", "name_en": "Cecina de Angus", "desc_es": "", "desc_en": "", "price": "25,00 €" },
+        { "name_es": "Plato de jamón ibérico", "name_en": "Plato de jamón ibérico", "desc_es": "", "desc_en": "", "price": "25,00 €" },
+        { "name_es": "Salpicón de langostinos", "name_en": "Salpicón de langostinos", "desc_es": "", "desc_en": "", "price": "22,00 €" },
+        { "name_es": "Puerros confitados y braseados sobre crema de yogur con aliño de frutos rojos y pistachos", "name_en": "Puerros confitados y braseados sobre crema de yogur con aliño de frutos rojos y pistachos", "desc_es": "", "desc_en": "", "price": "18,00 €" },
+        { "name_es": "Flores de alcachofa a la plancha", "name_en": "Flores de alcachofa a la plancha", "desc_es": "", "desc_en": "", "price": "18,00 €" }
+      ]
+    },
+    {
+      "title_es": "Carnes y platos principales", "title_en": "Meats & mains",
+      "items": [
+        { "name_es": "Nuggets de pollo con patatas", "name_en": "Nuggets de pollo con patatas", "desc_es": "", "desc_en": "", "price": "15,90 €" },
+        { "name_es": "Gran cachopo tradicional asturiano", "name_en": "Gran cachopo tradicional asturiano", "desc_es": "", "desc_en": "", "price": "32,00 €" },
+        { "name_es": "Entrecot de ternera asturiana", "name_en": "Entrecot de ternera asturiana", "desc_es": "", "desc_en": "", "price": "28,00 €" },
+        { "name_es": "Solomillo de ternera asturiana", "name_en": "Solomillo de ternera asturiana", "desc_es": "", "desc_en": "", "price": "56,00 €" },
+        { "name_es": "Hamburguesa de ternera con patatas", "name_en": "Hamburguesa de ternera con patatas", "desc_es": "", "desc_en": "", "price": "18,90 €" },
+        { "name_es": "Carrilleras de buey a la reducción de Pedro Ximénez", "name_en": "Carrilleras de buey a la reducción de Pedro Ximénez", "desc_es": "", "desc_en": "", "price": "26,00 €" },
+        { "name_es": "Fabada asturiana", "name_en": "Fabada asturiana", "desc_es": "", "desc_en": "", "price": "18,00 €" },
+        { "name_es": "Costillas BBQ", "name_en": "Costillas BBQ", "desc_es": "", "desc_en": "", "price": "22,00 €" }
+      ]
+    },
+    {
+      "title_es": "Pescados y mariscos", "title_en": "Fish & seafood",
+      "items": [
+        { "name_es": "Calamares frescos con alioli", "name_en": "Calamares frescos con alioli", "desc_es": "", "desc_en": "", "price": "22,00 €" },
+        { "name_es": "Zamburiñas (unidad)", "name_en": "Zamburiñas (unidad)", "desc_es": "", "desc_en": "", "price": "3,00 €" },
+        { "name_es": "Gambones a la plancha", "name_en": "Gambones a la plancha", "desc_es": "", "desc_en": "", "price": "20,00 €" },
+        { "name_es": "Nuestros chipirones", "name_en": "Nuestros chipirones", "desc_es": "", "desc_en": "", "price": "19,00 €" },
+        { "name_es": "Mejillones en salsa marinera o vinagreta", "name_en": "Mejillones en salsa marinera o vinagreta", "desc_es": "", "desc_en": "", "price": "18,00 €" },
+        { "name_es": "Pulpo a la gallega o a la brasa", "name_en": "Pulpo a la gallega o a la brasa", "desc_es": "", "desc_en": "", "price": "26,00 €" },
+        { "name_es": "Rubiel del puerto de Cudillero", "name_en": "Rubiel del puerto de Cudillero", "desc_es": "", "desc_en": "", "price": "s/ peso" },
+        { "name_es": "Lubina al horno o a la plancha", "name_en": "Lubina al horno o a la plancha", "desc_es": "", "desc_en": "", "price": "28,00 €" },
+        { "name_es": "Salteado de pulpo, verduras y langostinos", "name_en": "Salteado de pulpo, verduras y langostinos", "desc_es": "", "desc_en": "", "price": "26,00 €" }
+      ]
+    },
+    {
+      "title_es": "Postres", "title_en": "Desserts",
+      "items": [
+        { "name_es": "Mousse de limón o chocolate", "name_en": "Mousse de limón o chocolate", "desc_es": "", "desc_en": "", "price": "4,90 €" },
+        { "name_es": "Tarta de queso asturiano con bola de helado", "name_en": "Tarta de queso asturiano con bola de helado", "desc_es": "", "desc_en": "", "price": "6,90 €" },
+        { "name_es": "Torrija de pan brioche caramelizada con bola de helado", "name_en": "Torrija de pan brioche caramelizada con bola de helado", "desc_es": "", "desc_en": "", "price": "7,90 €" },
+        { "name_es": "Tiramisú con bola de helado", "name_en": "Tiramisú con bola de helado", "desc_es": "", "desc_en": "", "price": "6,90 €" },
+        { "name_es": "Ferrero con helado", "name_en": "Ferrero con helado", "desc_es": "", "desc_en": "", "price": "7,90 €" },
+        { "name_es": "Copa de helado (turrón, vainilla, fresa o chocolate negro)", "name_en": "Copa de helado (turrón, vainilla, fresa o chocolate negro)", "desc_es": "", "desc_en": "", "price": "6,90 €" },
+        { "name_es": "Yogur artesano cremoso con confitura de arándanos o miel", "name_en": "Yogur artesano cremoso con confitura de arándanos o miel", "desc_es": "", "desc_en": "", "price": "4,00 €" },
+        { "name_es": "Arroz con leche", "name_en": "Arroz con leche", "desc_es": "", "desc_en": "", "price": "6,50 €" },
+        { "name_es": "Cuajada casera con miel y nueces", "name_en": "Cuajada casera con miel y nueces", "desc_es": "", "desc_en": "", "price": "6,50 €" },
+        { "name_es": "Coulant de chocolate con helado de yogur con grosella", "name_en": "Coulant de chocolate con helado de yogur con grosella", "desc_es": "", "desc_en": "", "price": "7,90 €" },
+        { "name_es": "Fruta de temporada", "name_en": "Fruta de temporada", "desc_es": "", "desc_en": "", "price": "3,50 €" },
+        { "name_es": "Sorbete de sidra artesano", "name_en": "Sorbete de sidra artesano", "desc_es": "", "desc_en": "", "price": "6,90 €" }
+      ]
+    },
+    {
+      "title_es": "Vinos blancos", "title_en": "White wines",
+      "items": [
+        { "name_es": "Albariño", "name_en": "Albariño", "desc_es": "Albariño", "desc_en": "Albariño", "price": "20,00 €" },
+        { "name_es": "Mar de Frades", "name_en": "Mar de Frades", "desc_es": "Albariño", "desc_en": "Albariño", "price": "29,00 €" },
+        { "name_es": "Pazo de San Mauro", "name_en": "Pazo de San Mauro", "desc_es": "Albariño", "desc_en": "Albariño", "price": "29,00 €" },
+        { "name_es": "Rueda", "name_en": "Rueda", "desc_es": "D.O. Rueda", "desc_en": "D.O. Rueda", "price": "18,00 €" },
+        { "name_es": "Marteleira", "name_en": "Marteleira", "desc_es": "D.O. Rueda", "desc_en": "D.O. Rueda", "price": "24,00 €" },
+        { "name_es": "Jara Verde", "name_en": "Jara Verde", "desc_es": "D.O. Rueda", "desc_en": "D.O. Rueda", "price": "" },
+        { "name_es": "José Pariente", "name_en": "José Pariente", "desc_es": "D.O. Rueda", "desc_en": "D.O. Rueda", "price": "" },
+        { "name_es": "Amatista", "name_en": "Amatista", "desc_es": "Moscato", "desc_en": "Moscato", "price": "18,00 €" },
+        { "name_es": "Prado Alén", "name_en": "Prado Alén", "desc_es": "Ribeiro", "desc_en": "Ribeiro", "price": "18,00 €" },
+        { "name_es": "Valdeorras Viña Abad", "name_en": "Valdeorras Viña Abad", "desc_es": "Godello", "desc_en": "Godello", "price": "20,00 €" }
+      ]
+    },
+    {
+      "title_es": "Vinos tintos", "title_en": "Red wines",
+      "items": [
+        { "name_es": "Don Paulino Crianza", "name_en": "Don Paulino Crianza", "desc_es": "D.O. Rioja", "desc_en": "D.O. Rioja", "price": "16,00 €" },
+        { "name_es": "Viña Eguía Crianza", "name_en": "Viña Eguía Crianza", "desc_es": "D.O. Rioja", "desc_en": "D.O. Rioja", "price": "16,00 €" },
+        { "name_es": "Azpilicueta Crianza", "name_en": "Azpilicueta Crianza", "desc_es": "D.O. Rioja", "desc_en": "D.O. Rioja", "price": "18,00 €" },
+        { "name_es": "Beronia Crianza", "name_en": "Beronia Crianza", "desc_es": "D.O. Rioja", "desc_en": "D.O. Rioja", "price": "18,00 €" },
+        { "name_es": "López de Haro Crianza", "name_en": "López de Haro Crianza", "desc_es": "D.O. Rioja", "desc_en": "D.O. Rioja", "price": "18,00 €" },
+        { "name_es": "Reserva Monte Real", "name_en": "Reserva Monte Real", "desc_es": "D.O. Rioja", "desc_en": "D.O. Rioja", "price": "20,00 €" },
+        { "name_es": "Reserva Viña Albina", "name_en": "Reserva Viña Albina", "desc_es": "D.O. Rioja", "desc_en": "D.O. Rioja", "price": "22,00 €" },
+        { "name_es": "Marqués de Vargas", "name_en": "Marqués de Vargas", "desc_es": "D.O. Rioja", "desc_en": "D.O. Rioja", "price": "28,00 €" },
+        { "name_es": "Rippa Dorii", "name_en": "Rippa Dorii", "desc_es": "Ribera del Duero", "desc_en": "Ribera del Duero", "price": "17,00 €" },
+        { "name_es": "Valdecuriel", "name_en": "Valdecuriel", "desc_es": "Ribera del Duero", "desc_en": "Ribera del Duero", "price": "17,00 €" },
+        { "name_es": "Emilio Moro Finca Resalso", "name_en": "Emilio Moro Finca Resalso", "desc_es": "Ribera del Duero", "desc_en": "Ribera del Duero", "price": "21,00 €" },
+        { "name_es": "MATSU El Pícaro", "name_en": "MATSU El Pícaro", "desc_es": "D.O. Toro", "desc_en": "D.O. Toro", "price": "16,00 €" },
+        { "name_es": "Gran Dama de Toro", "name_en": "Gran Dama de Toro", "desc_es": "D.O. Toro", "desc_en": "D.O. Toro", "price": "19,00 €" },
+        { "name_es": "Fosado", "name_en": "Fosado", "desc_es": "", "desc_en": "", "price": "16,00 €" },
+        { "name_es": "Prieto Picudo de León Senoel", "name_en": "Prieto Picudo de León Senoel", "desc_es": "", "desc_en": "", "price": "16,00 €" },
+        { "name_es": "Espumoso Homenaje", "name_en": "Espumoso Homenaje", "desc_es": "", "desc_en": "", "price": "17,00 €" },
+        { "name_es": "Colegiata Toro", "name_en": "Colegiata Toro", "desc_es": "", "desc_en": "", "price": "18,00 €" }
+      ]
+    },
+    {
+      "title_es": "Espumosos y sidra", "title_en": "Sparkling & cider",
+      "items": [
+        { "name_es": "Sidra Natural Asturiana", "name_en": "Sidra Natural Asturiana", "desc_es": "", "desc_en": "", "price": "6,00 €" },
+        { "name_es": "Benjamín", "name_en": "Benjamín", "desc_es": "", "desc_en": "", "price": "7,00 €" },
+        { "name_es": "Cava Brut Nature Jaume Serra", "name_en": "Cava Brut Nature Jaume Serra", "desc_es": "", "desc_en": "", "price": "22,00 €" },
+        { "name_es": "Cava Brut Nature Orgánico Parés Baltà", "name_en": "Cava Brut Nature Orgánico Parés Baltà", "desc_es": "", "desc_en": "", "price": "22,00 €" },
+        { "name_es": "Blanc JP. Chenet Brut", "name_en": "Blanc JP. Chenet Brut", "desc_es": "Espumoso francés", "desc_en": "French sparkling", "price": "24,00 €" },
+        { "name_es": "Sangre de Judas", "name_en": "Sangre de Judas", "desc_es": "Espumoso italiano", "desc_en": "Italian sparkling", "price": "15,00 €" },
+        { "name_es": "Sidra champán Extra El Gaitero", "name_en": "Sidra champán Extra El Gaitero", "desc_es": "", "desc_en": "", "price": "15,00 €" }
+      ]
+    },
+    {
+      "title_es": "Licores dulces", "title_en": "Sweet liqueurs",
+      "items": [
+        { "name_es": "Néctar de Pedro Ximénez", "name_en": "Néctar de Pedro Ximénez", "desc_es": "", "desc_en": "", "price": "4,00 €" },
+        { "name_es": "Oporto Warre's Tawny o Ruby", "name_en": "Oporto Warre's Tawny o Ruby", "desc_es": "", "desc_en": "", "price": "4,00 €" },
+        { "name_es": "Vino aromatizado Sansón", "name_en": "Vino aromatizado Sansón", "desc_es": "", "desc_en": "", "price": "4,00 €" }
+      ]
+    }
+  ],
 
   "breakfast_intro_es": "Desayuno buffet con producto local y elaboración casera. Estos son algunos de nuestros productos:",
   "breakfast_intro_en": "Buffet breakfast with local produce and homemade items. Here are some of our products:",
