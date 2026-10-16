@@ -168,8 +168,6 @@ collections:
         label: "Bonos y datos de pago"
         file: "src/_data/bonos.json"
         fields:
-          - { label: "IBAN (transferencia)", name: "iban", widget: "string" }
-          - { label: "Titular de la cuenta", name: "titular", widget: "string" }
           - label: "Bonos (productos)"
             name: "items"
             widget: "list"
