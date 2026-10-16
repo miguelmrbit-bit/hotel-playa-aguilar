@@ -17,7 +17,8 @@ altEn: /en/restaurant.html
 <section>
   <div class="wrap">
     <div class="sec-head reveal"><div class="eyebrow">Carta del restaurante</div><h2>Nuestra cocina</h2>
-      <p>{{ menus.restaurant_intro_es }}</p></div>
+      <p>{{ menus.restaurant_intro_es }}</p>
+      {% if menus.restaurantPdf %}<p class="reveal" style="margin-top:14px"><a class="btn" href="{{ menus.restaurantPdf }}" target="_blank" rel="noopener">Descargar carta del restaurante (PDF)</a></p>{% endif %}</div>
     <div class="menu">
       {%- for sec in menus.restaurant_sections %}
       <div class="menu-sec reveal"><h3>{{ sec.title_es }}</h3>
@@ -33,7 +34,8 @@ altEn: /en/restaurant.html
 <section class="alt">
   <div class="wrap">
     <div class="sec-head reveal"><div class="eyebrow">Carta de desayunos</div><h2>Para empezar el día</h2>
-      <p>{{ menus.breakfast_intro_es }}</p></div>
+      <p>{{ menus.breakfast_intro_es }}</p>
+      {% if menus.breakfastPdf %}<p class="reveal" style="margin-top:14px"><a class="btn ghost" href="{{ menus.breakfastPdf }}" target="_blank" rel="noopener">Descargar carta de desayunos (PDF)</a></p>{% endif %}</div>
     <div class="menu">
       {%- for sec in menus.breakfast_sections %}
       <div class="menu-sec reveal"><h3>{{ sec.title_es }}</h3>

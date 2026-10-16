@@ -17,7 +17,8 @@ altEn: /en/restaurant.html
 <section>
   <div class="wrap">
     <div class="sec-head reveal"><div class="eyebrow">Restaurant menu</div><h2>Our kitchen</h2>
-      <p>{{ menus.restaurant_intro_en }}</p></div>
+      <p>{{ menus.restaurant_intro_en }}</p>
+      {% if menus.restaurantPdf %}<p class="reveal" style="margin-top:14px"><a class="btn" href="{{ menus.restaurantPdf }}" target="_blank" rel="noopener">Download restaurant menu (PDF)</a></p>{% endif %}</div>
     <div class="menu">
       {%- for sec in menus.restaurant_sections %}
       <div class="menu-sec reveal"><h3>{{ sec.title_en }}</h3>
@@ -33,7 +34,8 @@ altEn: /en/restaurant.html
 <section class="alt">
   <div class="wrap">
     <div class="sec-head reveal"><div class="eyebrow">Breakfast menu</div><h2>To start the day</h2>
-      <p>{{ menus.breakfast_intro_en }}</p></div>
+      <p>{{ menus.breakfast_intro_en }}</p>
+      {% if menus.breakfastPdf %}<p class="reveal" style="margin-top:14px"><a class="btn ghost" href="{{ menus.breakfastPdf }}" target="_blank" rel="noopener">Download breakfast menu (PDF)</a></p>{% endif %}</div>
     <div class="menu">
       {%- for sec in menus.breakfast_sections %}
       <div class="menu-sec reveal"><h3>{{ sec.title_en }}</h3>

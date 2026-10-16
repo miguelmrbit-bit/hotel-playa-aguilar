@@ -1,41 +1,64 @@
 {
-  "breakfast_intro_es": "Desayuno buffet con producto local, repostería casera y opciones saludables. (Contenido de ejemplo: edítalo desde el panel para poner tu carta real.)",
-  "breakfast_intro_en": "Buffet breakfast with local produce, homemade pastries and healthy options. (Sample content: edit it from the panel to add your real menu.)",
+  "restaurantPdf": "/assets/cartas/carta-restaurante.pdf",
+  "breakfastPdf": "/assets/cartas/carta-desayunos.pdf",
+
+  "restaurant_intro_es": "Cocina asturiana de producto local y pescado del día, frente al Cantábrico. Consulta nuestra carta completa.",
+  "restaurant_intro_en": "Asturian cuisine with local produce and fish of the day, facing the Cantabrian Sea. See our full menu.",
+  "restaurant_sections": [],
+
+  "breakfast_intro_es": "Desayuno buffet con producto local y elaboración casera. Estos son algunos de nuestros productos:",
+  "breakfast_intro_en": "Buffet breakfast with local produce and homemade items. Here are some of our products:",
   "breakfast_sections": [
     {
-      "title_es": "Panadería y repostería", "title_en": "Bakery & pastries",
+      "title_es": "Café, infusiones y zumos", "title_en": "Coffee, teas & juices",
       "items": [
-        { "name_es": "Pan artesano y tostadas", "name_en": "Artisan bread & toast", "desc_es": "Con aceite de oliva, tomate o mantequilla", "desc_en": "With olive oil, tomato or butter", "price": "" },
-        { "name_es": "Bollería casera", "name_en": "Homemade pastries", "desc_es": "Croissant, magdalenas y bizcochos del día", "desc_en": "Croissant, muffins and cakes of the day", "price": "" }
+        { "name_es": "Café 100% tueste natural, descafeinado, infusiones, Cola-Cao, Nesquick", "name_en": "Coffee (100% natural roast), decaf, teas, Cola-Cao, Nesquick", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Zumo de naranja natural recién exprimido", "name_en": "Freshly squeezed orange juice", "desc_es": "", "desc_en": "", "price": "" }
       ]
     },
     {
-      "title_es": "Salado", "title_en": "Savoury",
+      "title_es": "Panadería y bollería", "title_en": "Bakery & pastries",
       "items": [
-        { "name_es": "Huevos y embutido asturiano", "name_en": "Eggs & Asturian cold cuts", "desc_es": "Jamón, chorizo y quesos de la tierra", "desc_en": "Ham, chorizo and local cheeses", "price": "" }
-      ]
-    }
-  ],
-  "restaurant_intro_es": "Cocina asturiana de producto local con pescado del día. (Contenido de ejemplo: edítalo desde el panel para poner tu carta real.)",
-  "restaurant_intro_en": "Asturian cuisine with local produce and fish of the day. (Sample content: edit it from the panel to add your real menu.)",
-  "restaurant_sections": [
-    {
-      "title_es": "Entrantes", "title_en": "Starters",
-      "items": [
-        { "name_es": "Fabada asturiana", "name_en": "Asturian fabada", "desc_es": "Guiso tradicional de fabes", "desc_en": "Traditional bean stew", "price": "" },
-        { "name_es": "Tabla de quesos de Asturias", "name_en": "Asturian cheese board", "desc_es": "Selección de quesos locales", "desc_en": "Selection of local cheeses", "price": "" }
+        { "name_es": "Pan de pueblo tostado", "name_en": "Toasted country bread", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Croissants a la plancha", "name_en": "Grilled croissants", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Churros", "name_en": "Churros", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Bizcocho casero", "name_en": "Homemade sponge cake", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Magdalenas", "name_en": "Muffins", "desc_es": "", "desc_en": "", "price": "" }
       ]
     },
     {
-      "title_es": "Principales", "title_en": "Mains",
+      "title_es": "Huevos y embutidos", "title_en": "Eggs & cold cuts",
       "items": [
-        { "name_es": "Pescado del día", "name_en": "Fish of the day", "desc_es": "Según mercado, a la plancha o al horno", "desc_en": "Market catch, grilled or baked", "price": "" }
+        { "name_es": "Huevos fritos o revueltos", "name_en": "Fried or scrambled eggs", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Jamón serrano", "name_en": "Serrano ham", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Jamón cocido extra", "name_en": "Cooked ham", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Salchichón ibérico", "name_en": "Iberian salchichón", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Chorizo ibérico", "name_en": "Iberian chorizo", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Lomo", "name_en": "Cured pork loin", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Paté de cerdo", "name_en": "Pork pâté", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Crema de untar de jamón york", "name_en": "Ham spread", "desc_es": "", "desc_en": "", "price": "" }
       ]
     },
     {
-      "title_es": "Postres", "title_en": "Desserts",
+      "title_es": "Quesos y untables", "title_en": "Cheeses & spreads",
       "items": [
-        { "name_es": "Arroz con leche requemado", "name_en": "Caramelised rice pudding", "desc_es": "Postre tradicional asturiano", "desc_en": "Traditional Asturian dessert", "price": "" }
+        { "name_es": "Queso asturiano Tres Oscos", "name_en": "Asturian cheese (Tres Oscos)", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Queso de untar", "name_en": "Spreadable cheese", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Mantequilla casera", "name_en": "Homemade butter", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Aceite de oliva virgen extra y tomate triturado", "name_en": "Extra virgin olive oil & crushed tomato", "desc_es": "", "desc_en": "", "price": "" }
+      ]
+    },
+    {
+      "title_es": "Dulce y lácteos", "title_en": "Sweet & dairy",
+      "items": [
+        { "name_es": "Mermeladas variadas y miel", "name_en": "Assorted jams & honey", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Nutella", "name_en": "Nutella", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Leche condensada", "name_en": "Condensed milk", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Muesli", "name_en": "Muesli", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Yogur cremoso natural", "name_en": "Creamy natural yogurt", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Arroz con leche casero", "name_en": "Homemade rice pudding", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Cuajada asturiana", "name_en": "Asturian cuajada (junket)", "desc_es": "", "desc_en": "", "price": "" },
+        { "name_es": "Fruta", "name_en": "Fruit", "desc_es": "", "desc_en": "", "price": "" }
       ]
     }
   ]
